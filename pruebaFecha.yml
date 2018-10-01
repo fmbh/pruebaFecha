@@ -7,3 +7,8 @@
 
     - name: Valida existencia de Stack
       shell: "echo algo"
+      
+    - name: Display all variables/facts known for a host
+      debug:
+        var: hostvars[inventory_hostname]
+      tags: debug_info
