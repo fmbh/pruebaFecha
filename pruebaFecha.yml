@@ -2,9 +2,8 @@
 
 - name: "Ejecución principal"
   hosts: localhost
-  remote_user: medusa
   
   tasks:
 
-  - name: "Prueba de fecha"
-    shell: "echo Hola mundo" 
+    - name: "Prueba de fecha"
+      shell: "echo Hola mundo" 
