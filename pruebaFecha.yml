@@ -1,9 +1,9 @@
 ---
 
-- name: "Ejecución principal"
-  hosts: localhost
-  
+- hosts: localhost
+  gather_facts: true
+  connection: local
   tasks:
 
-    - name: "Prueba de fecha"
-      shell: "echo Hola mundo" 
+    - name: Valida existencia de Stack
+      shell: "echo algo"
